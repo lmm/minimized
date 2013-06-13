@@ -1,6 +1,8 @@
 <hgroup>
-  <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
-  {% if site.subtitle %}
-    <h2>{{ site.subtitle }}</h2>
-  {% endif %}
+  <div id="header-inner">
+    <span class="first"><a href="{{ root_url }}/">{{ site.title }}</a></span>
+    <span><a href="/about">about</a></span>
+    <span><a href="http://www.github.com/">projects</a></span>
+    <span><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">rss</a></span>
+  </div>
 </hgroup>

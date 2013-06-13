@@ -1,8 +1,169 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+$bgcolor: transparent;
+$fgcolor1: #222222;
+$fgcolor2: #333333;
+$link-hover-color: #f27405;
 
 html {
-    // Show the scrollbar so the content doesn't shrink/expand.
-    overflow-y: scroll;
+   background: transparent;
+   overflow-y: scroll;
+}
+
+#content {
+    background: #FEFFFB;
+}
+
+body {
+    max-width: 1000px;
+}
+
+body > header {
+    opacity: 0.9;
+    background: $bgcolor;
+    color: $fgcolor1;
+
+    h1 {
+        font-family: "PT Serif","Georgia","Helvetica Neue",Arial,sans-serif;
+        font-size: 1.4em;
+        display: block;
+        text-align: right;
+        font-size: 2.2em;
+    }
+}
+
+body > header h1 a, body > header h1 a:visited, body > header h1 a:hover {
+    color: $fgcolor1;
+    text-decoration: none;
+}
+
+body > footer {
+    background: $bgcolor;
+    color: $bgcolor;
+    border: none;
+    text-shadow: none;
+
+    a {
+        color: $bgcolor;
+        &:hover { color: $bgcolor; }
+        &:visited { color: $bgcolor; }
+    }
+}
+
+body > div > div {
+    background: $bgcolor;
+    border-right: none;
+}
+
+body > div {
+    background: $bgcolor;
+    border: none;
+}
+
+#header-inner {
+    position: relative;
+    padding-right: 25px;
+
+    span {
+        font-size: 0.8em;
+        font-family: "PT Sans","Helvetica Neue",Arial,sans-serif;
+        margin-right: 15px;
+
+        &.first {
+            font-size: 1em;
+            margin-right: 27px;
+            a { color: $fgcolor2; }
+        }
+
+        a {
+            color: #aaaaaa;
+            text-decoration: none;
+            &:hover { color: $link-hover-color; }
+        }
+    }
+}
+
+#span-title {
+    font-size: 1.2em;
+    position: absolute;
+    right: 0;
+
+    a { color: $fgcolor1; }
+}
+
+.heading, body > header h1, h1, h2, h3, h4, h5, h6 {
+    font-family: "Droid Sans","Helvetica Neue",Arial,sans-serif;
+}
+
+#blog-archives {
+    time {
+        top: 1.57em;
+        .month { text-transform: UPPERCASE; }
+    }
+
+    h1 {
+        font-size: 1.2em;
+        margin-bottom: 0.1em;
+
+        a {color: $fgcolor2;}
+        a:hover {color: $link-hover-color; text-decoration: none;}
+    }
+
+    h2 {
+        font-size: 1.3em;
+        &:first-child { padding-top: 0.85em; }
+    }
+
+}
+
+article > footer {
+    display: none;
+}
+
+p code, li code {
+    background: #D1D1D1;
+    border: 1px solid #C8C8C8;
+    border-radius: 0;
+    color: $fgcolor2;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    margin: -1px 0;
+    padding: 0 0.2em;
+}
+
+.pre-code, html .gist .gist-file .gist-syntax .highlight pre, .highlight code {
+    background: url("/images/noise.png?1370647968") repeat scroll left top rgba(0, 0, 0, 0.6) !important;
+}
+
+.pre-code span, html .gist .gist-file .gist-syntax .highlight pre span, .highlight code span, html .gist .gist-file .gist-syntax .highlight pre span, .highlight code span {
+    font-family: "DejaVu Sans Mono",Menlo,Monaco,"Andale Mono","Courier New",monospace;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+h2 {
+    &.name {color: blue; padding-left:20px;}
+}
+
+highlight .line-numbers span, html .gist .gist-file .gist-syntax .highlight .line_numbers span {
+    color: #586E75 !important;
+    font-family: "DejaVu Sans Mono";
+}
+
+
+aside.sidebar a {
+    text-decoration: none;
+}
+
+.collapse-sidebar aside.sidebar {
+    display: none;
+}
+
+ul, ol {
+    margin-left: 2em;
 }

@@ -115,7 +115,9 @@ $('document').ready(function() {
   flashVideoFallback();
   addCodeLineNumbers();
   getNav();
-  addSidebarToggler();
+
+  //addSidebarToggler();
+  $('body').addClass('collapse-sidebar');
 });
 
 // iOS scaling bug fix
