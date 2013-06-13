@@ -63,7 +63,6 @@ body > div {
 
 #header-inner {
     position: relative;
-    padding-right: 25px;
 
     span {
         font-size: 0.8em;
@@ -71,9 +70,12 @@ body > div {
         margin-right: 15px;
 
         &.first {
-            font-size: 1em;
-            margin-right: 27px;
+            margin-right: 27px; font-size: 1em;
             a { color: $fgcolor2; }
+        }
+
+        &.last {
+            margin-right: 0;
         }
 
         a {
