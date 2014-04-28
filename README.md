@@ -1,7 +1,7 @@
 minimized
 =========
 
-A simple minimal Octopress theme. See an example of it [here](http://www.laurenceman.com).
+A simple minimal Octopress theme.
 
 ###Install
 	$ cd octopress 
